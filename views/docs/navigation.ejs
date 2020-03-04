@@ -1,0 +1,150 @@
+  
+
+<div class="section">
+    <h2 class="title-4">Horizontal Navigation</h2>
+
+    <p>
+        The horizontal navigation component is the standard horizontal navigation bar
+        used by many sites. In order to configure a vertical navigation component 
+        you must add the <code>.nav-menu</code> class to the root <code>.nav</code> element.
+    </p>
+
+    <label class="help-text mb-default">Example</label>
+
+    <ul class="nav nav-menu border-small mb-default">
+        <div class="nav-left">
+            <span class="nav-text">
+                <a href="#">Site Title</a>
+            </span>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-item">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="./framework.html">Framework</a>
+                </li>
+                <li>
+                    <a href="#">Components</a>
+                </li>
+            </ul>
+        </div>
+    </ul>
+
+    <p>
+        Like other components the basic default styling can be expanded 
+        upon with the use various helper classes. The following is an example
+        of a more advanced implemented of the horizontal navigation component that uses
+        some of these additional helper classes.
+    </p>
+
+    <label class="help-text mb-default">Example</label>
+
+    <ul class="nav nav-menu mb-default fill-dark is-shadowed is-rounded">
+        <div class="nav-left">
+            <span class="nav-text">
+                <a href="#">Site Title</a>
+            </span>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-item">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="./framework.html">Framework</a>
+                </li>
+                <li>
+                    <a href="#">Components</a>
+                </li>
+            </ul>
+        </div>
+    </ul>
+
+    <p>
+        The expanded example make use of the <code>.fill-dark</code>, <code>.is-shadowed</code>,
+        and <code>.is-rounded</code> helpers to help flesh out the styling of the component. Be sure
+        to experiment with all the available helpers to reach your desired component design.
+    </p>
+</div>
+
+<div class="section">
+    <h2 class="title-4">Vertical Navigation</h2>
+
+    <p>
+        In order to configure a vertical navigation component you must add the 
+        <code>.nav-list</code> class to the root <code>.nav</code> element. The vertical navigation
+        be used to build the side navigation bar of a website and much more.
+    </p>
+
+    <div class="mb-large">
+        <label class="help-text mb-default">Example</label>
+        <div class="code-preview">
+            <pre>
+                <span class="code-line">
+                    <span class="tag">&lt;div </span>
+                    <span class="attribute">class=</span>
+                    <span class="value">"nav nav-list"</span>
+                    <span class="tag">&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;ul </span>
+                    <span class="attribute">class=</span>
+                    <span class="value">"nav-group"</span>
+                    <span class="tag">&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;li </span>
+                    <span class="attribute">class=</span>
+                    <span class="value">"item-header"</span>
+                    <span class="tag">&gt;</span>
+                    <span>Header 1</span>
+                    <span class="tag">&lt;/li&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;li</span>
+                    <span class="tag">&gt;</span>
+                    <span class="tag">&lt;a&gt;</span>
+                    <span>Header 1</span>
+                    <span class="tag">&lt;/a&gt;</span>
+                    <span class="tag">&lt;/li&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;li</span>
+                    <span class="tag">&gt;</span>
+                    <span class="tag">&lt;a&gt;</span>
+                    <span>Header 2</span>
+                    <span class="tag">&lt;/a&gt;</span>
+                    <span class="tag">&lt;/li&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;/ul&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&lt;/div&gt;</span>
+                </span>
+            </pre>
+            <div class="output">
+                <div class="nav nav-list">
+                    <ul class="nav-group">
+                        <li class="item-header">Header 1</li>
+                        <li><a>Link 1</a></li>
+                        <li><a>Link 2</a></li>
+                    </ul>
+                    <ul class="nav-group">
+                        <li class="item-header">Header 2</li>
+                        <li><a>Link 1</a></li>
+                        <li><a>Link 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

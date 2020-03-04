@@ -1,0 +1,204 @@
+<div class="mb-large">
+    <h1 class="title-1">Tables</h1>
+
+    <p>
+        The table component.
+    </p>
+</div>
+
+<div class="section mb-large">
+    <div class="section">
+        <table class="table mb-default is-rounded is-shadowed">
+            <thead class="fill-light">
+                <tr>
+                    <th>Class</th>
+                    <th>Description</th>
+                    <th>Target Element</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>.table</code></td>
+                    <td>
+                        Attach to the root of the table to style the table
+                    </td>
+                    <td>
+                        table
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>.table-striped</code></td>
+                    <td>
+                        Applies an alternating color to the even and odd table rows
+                    </td>
+                    <td>
+                        table
+                    </td>
+                </tr>
+                <tr>
+                    <td><code>.table-hoverable</code></td>
+                    <td>
+                        Highlights the currently hovered row
+                    </td>
+                    <td>
+                        table
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2 class="title-4">Basic Table</h2>
+        <p>The basic markup required for the most basic table element styling.</p>
+
+        <label class="help-text mb-default">Example</label>
+    
+        <div class="code-preview">
+            <pre>
+                <span class="code-line">
+                    <span class="tag">&lt;table </span>
+                    <span class="attribute">class</span>
+                    <span class="value">"table table-striped table-hoverable"</span>
+                    <span class="tag">&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;thead&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&#9;&lt;th&gt;&lt;/th&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;/tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;/thead&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;tbody&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&#9;&lt;td&gt;&lt;/td&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;/tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;/tbody&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&lt;/table&gt;</span>
+                </span>
+            </pre>
+            <div class="output">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>jdoe@email.com</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2 class="title-4">Helper Customization Options</h2>
+        <p>
+            Like other components the table is able to be modified with the addition of helper
+            styles onto the component.
+        </p>
+
+        <label class="help-text mb-default">Example</label>
+    
+        <div class="code-preview">
+            <pre>
+                <span class="code-line">
+                    <span class="tag">&lt;table </span>
+                    <span class="attribute">class</span>
+                    <span class="value">"table is-rounded is-shadowed"</span>
+                    <span class="tag">&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;thead </span>
+                    <span class="attribute">class</span>
+                    <span class="value">"fill-light"</span>
+                    <span class="tag">&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span>&#9;&#9;&#9;...</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;/tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;/thead&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;tbody&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span>&#9;&#9;&lt;tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&#9;...</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&#9;&lt;/tr&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&#9;&lt;/tbody&gt;</span>
+                </span>
+                <span class="code-line">
+                    <span class="tag">&lt;/table&gt;</span>
+                </span>
+            </pre>
+            <div class="output">
+                <table class="table is-rounded is-shadowed">
+                    <thead class="fill-light">
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>jdoe@email.com</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

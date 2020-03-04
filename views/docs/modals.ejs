@@ -1,0 +1,217 @@
+<script>
+    function toggleModal(id) {
+        var demoModal = document.getElementById(id);
+
+        if (demoModal.classList.contains('open')) {
+            demoModal.classList.remove('open');
+        }
+        else {
+            demoModal.classList.add('open');
+        }
+    }
+</script>
+
+<div class="section">
+    <h1 class="title-1">Modal</h1>
+    <p>
+        Simple dialog prompts. This component requires some additional setup to 
+        get working properly. Some basic JS can be used to conditionally apply
+        the <code>.open</code> class to the modal component.
+    </p>
+
+    <p class="text-small">
+        * Below you'll find a sample code snippet that can be used to toggle the open
+        state of the modal.
+    </p>
+</div>
+
+<div class="section">
+    <h2 class="title-4">Basic Modal</h2>
+    <p>
+        The modal component allows for you to define header, content, and footer sections
+        for the dialog.
+    </p>
+    
+    <label class="help-text mb-default">Example</label>
+
+    <pre class="mb-large">
+        <span class="code-line">
+            <span class="tag">&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-overlay fade-in" </span>
+            <span class="attribute">id=</span>
+            <span class="value">"demoModal"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal" </span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-header"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-content"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-footer"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&lt;/div&gt;</span>
+        </span>
+    </pre>
+
+    <button class="button" onclick="toggleModal('demoModal')">Toggle Modal</button>
+</div>
+
+<div class="section">
+    <h2 class="title-4">Fullscreen Modal</h2>
+    <p>
+        If you want a fullscreen modal add the <code>.modal-fullscreen</code> class to 
+        to the <code>.mdoal</code> element.
+    </p>
+    
+    <label class="help-text mb-default">Example</label>
+
+    <pre class="mb-large">
+        <span class="code-line">
+            <span class="tag">&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-overlay fade-in" </span>
+            <span class="attribute">id=</span>
+            <span class="value">"demoModal"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal modal-fullscreen" </span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-header"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-content"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;div </span>
+            <span class="attribute">class=</span>
+            <span class="value">"modal-footer"</span>
+            <span class="tag">&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&#9;&lt;/div&gt;</span>
+        </span>
+        <span class="code-line">
+            <span class="tag">&lt;/div&gt;</span>
+        </span>
+    </pre>
+
+    <button class="button" onclick="toggleModal('demoFullModal')">Toggle Fullscreen Modal</button>
+</div>
+
+<div class="section">
+    <h2 class="title-4">Sample Javascript Implementation</h2>
+    <p>
+        The modal component requires some additional setup. Below is a basic Javascript
+        code snippet that can be used to toggle the open state of the modal dialog.
+    </p>
+
+    <div class="mb-large">
+        <pre>
+            function toggleModal(id) {
+                var demoModal = document.getElementById(id);
+        
+                if (demoModal.classList.contains('open')) {
+                    demoModal.classList.remove('open');
+                }
+                else {
+                    demoModal.classList.add('open');
+                }
+            }
+        </pre>
+    </div>
+
+    <p>
+        With that function defined you can simply call the function from an <code>onclick</code> event to
+        toggle the open state of the modal.
+    </p>
+
+    <pre>
+        <span class="code-line">
+            <span class="tag">&lt;button </span>
+            <span class="attribute">onclick=</span>
+            <span class="value">"toggleModal('demoModal')"</span>
+            <span class="tag">&gt;&lt;/button&gt;</span>
+        </span>
+    </pre>
+</div>
+
+<div class="modal-overlay fade-in" id="demoModal">
+    <div class="modal">
+        <div class="modal-header">
+            Basic Modal
+        </div>
+        <div class="modal-content">
+            Modal content goes here
+        </div>
+        <div class="modal-footer">
+            <a class="cursor-pointer" onclick="toggleModal('demoModal')">Close</a>
+            <button type="button" class="button">Send</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-overlay fade-in" id="demoFullModal">
+    <div class="modal modal-fullscreen">
+        <div class="modal-header">
+            Fullscreen Modal
+        </div>
+        <div class="modal-content">
+            Modal content goes here
+        </div>
+        <div class="modal-footer">
+            <a class="cursor-pointer" onclick="toggleModal('demoFullModal')">Close</a>
+            <button type="button" class="button">Send</button>
+        </div>
+    </div>
+</div>

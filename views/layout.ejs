@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thanatos CSS</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="thanatos.css" rel="stylesheet">
+
+    <%- style %>
+</head>
+
+<style>
+    html,
+    body {
+
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <div style="display: flex; flex-direction: row; height: 100%;">
+        <div class="nav nav-list border-default-right" style="width: 250px; padding: 30px;">
+            <ul class="nav-group">
+                <li class="item-header"><a href="/">Thanatos Css</a></li>
+            </ul>
+
+            <ul class="nav-group">
+                <li class="item-header">Design</li>
+                <li><a href="grid-layout">Layout</a></li>
+                <li><a href="helpers">Helpers</a></li>
+                <li><a href="animation">Animations</a></li>
+                <li><a href="colors">Colors</a></li>
+                <li><a href="code">Code</a></li>
+            </ul>
+            <ul class="nav-group">
+                <li class="item-header">Elements</li>
+                <li><a href="controls">Inputs, Textareas, etc.</a></li>
+                <li><a href="button">Buttons</a></li>
+                <li><a href="tables">Tables</a></li>
+            </ul>
+            <ul class="nav-group">
+                <li class="item-header">Components</li>
+                <li><a href="breadcrumb">Breadcrumbs</a></li>
+                <li><a href="cards">Cards</a></li>
+                <li><a href="navigation">Navigation</a></li>
+                <li><a href="pagination">Pagination</a></li>
+                <li><a href="modals">Modals</a></li>
+                <li><a href="tooltips">Tooltips</a></li>
+                <li><a href="color-swatch">Color Swatches</a></li>
+            </ul>
+            <ul class="nav-group">
+                <li class="item-header">Typography</li>
+                <li><a href="labels">Labels</a></li>
+                <li><a href="typography">Typography</a></li>
+            </ul>
+        </div>
+        <div style="flex: 1; display: flex; flex-direction: column;">
+            <ul class="nav nav-menu text-dark border-default-bottom">
+                <div class="nav-left">
+                    <span class="nav-text">
+                        <a href="/">Thanatos CSS</a>
+                    </span>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-item">
+                        <li>
+                            <a href="documentation">Documentation</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/NSSure/thanatos-css" target="_blank">Source</a>
+                        </li>
+                        <li class="border-default-left">
+                            <a href="source-code">
+                                <i class="fa fa-download"></i> 
+                                Download
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <div class="content" style="flex: 1; padding: 30px; overflow-y: auto;">
+                <%- body %>
+            </div>
+        </div>
+    </div>
+
+    <%- script %>
+</body>
+
+</html>
