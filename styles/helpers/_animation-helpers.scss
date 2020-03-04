@@ -1,0 +1,17 @@
+@each $iteration-count in $animation-iteration-counts {
+    .iterate-#{$iteration-count} {
+      animation: $iteration-count;
+    }
+  }
+
+@each $delay-interval in $animation-delay-intervals {
+  .delay-#{$delay-interval} {
+    animation-delay: $delay-interval;
+  }
+}
+
+@each $duration-interval in $animation-duration-intervals {
+  .duration-#{$duration-interval} {
+    animation-duration: $duration-interval;
+  }
+}

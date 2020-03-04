@@ -1,0 +1,44 @@
+.breadcrumb {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    background-color: $color-light;
+
+    i {
+        margin-right: 15px;
+    }
+
+    li {
+        padding: $padding-default 0;
+        font-size: 14px;
+        
+        &::after {
+            content: '/';
+            padding: 0 $padding-default;
+        }
+
+        &:first-child {
+            padding-left: $padding-default;
+        }
+
+        &:last-child {
+            &::after {
+                content: '';
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-default !important;
+            cursor: pointer;
+
+            &.active {
+
+            }
+        }
+    }
+}

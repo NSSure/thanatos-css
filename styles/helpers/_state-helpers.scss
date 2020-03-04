@@ -1,0 +1,77 @@
+.is-rounded-xs {
+    border-radius: $border-radius-extra-small;
+}
+
+.is-rounded-sm {
+    border-radius: $border-radius-small;
+}
+
+.is-rounded {
+    border-radius: $border-radius-default;
+}
+
+.is-rounded-md {
+    border-radius: $border-radius-medium;
+}
+
+.is-rounded-lg {
+    border-radius: $border-radius-large;
+}
+
+.is-shadowed {
+    box-shadow: $box-shadow-default;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+// Border helpers.
+.border-default {
+    border: 1px solid $color-divider;
+
+    &-left {
+        border-left: 1px solid $color-divider;
+    }
+
+    &-top {
+        border-top: 1px solid $color-divider;
+    }
+
+    &-right {
+        border-right: 1px solid $color-divider;
+    }
+
+    &-bottom {
+        border-bottom: 1px solid $color-divider;
+    }
+}
+
+.border-small {
+    border: $border-width-small solid $color-divider;
+
+    &-left {
+        border-left: $border-width-small solid $color-divider;
+    }
+
+    &-top {
+        border-top: $border-width-small solid $color-divider;
+    }
+
+    &-right {
+        border-right: $border-width-small solid $color-divider;
+    }
+
+    &-bottom {
+        border-bottom: $border-width-small solid $color-divider;
+    }
+}
+
+// Outline helpers.
+.outline-default {
+    outline: 1px solid $color-divider;
+}

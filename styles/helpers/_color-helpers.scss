@@ -1,0 +1,42 @@
+@each $color, $hex in $basic-color-map {
+    @for $i from 0 through 5 {
+    .fill-#{$color} {
+      background-color: $hex;
+    }
+
+    // Lightened fill colors.
+    .fill-#{$color}-lighten-#{$i} {
+      background-color: lighten($color: $hex, $amount: $i * 5);
+    }
+
+    // Darkened fill colors.
+    .fill-#{$color}-darken-#{$i} {
+      background-color: darken($color: $hex, $amount: $i * 5);
+    }
+
+    // Text colors.
+    .text-#{$color} {
+      color: $hex;
+    }
+
+    // Lightened fill colors.
+    .text-#{$color}-lighten-#{$i} {
+      color: lighten($color: $hex, $amount: $i * 5);
+    }
+
+    // Darkened fill colors.
+    .text-#{$color}-darken-#{$i} {
+      color: darken($color: $hex, $amount: $i * 5);
+    }
+  }
+}
+
+@each $color, $hex in $other-color-map {
+  .fill-#{$color} {
+    background-color: $hex;
+  }
+
+  .text-#{$color} {
+    color: $hex;
+  }
+}

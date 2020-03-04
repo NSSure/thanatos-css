@@ -1,0 +1,26 @@
+.pagination {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    // Common pagination theme styles.
+    li {
+        padding: $padding-extra-small $padding-small;
+        margin-right: $margin-extra-small;
+        cursor: pointer;
+        
+        &.active {
+            background-color: $color-light;
+        }
+
+        &:hover {
+            background-color: $color-light;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

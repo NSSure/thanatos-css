@@ -1,0 +1,58 @@
+// Global spacing values.
+$spacing-large: 25px;
+$spacing-medium: 20px;
+$spacing-default: 15px;
+$spacing-small: 10px;
+$spacing-extra-small: 7px;
+
+// Padding spacing.
+$padding-large: $spacing-large;
+$padding-medium: $spacing-medium;
+$padding-default: $spacing-default;
+$padding-small: $spacing-small;
+$padding-extra-small: $spacing-extra-small;
+
+// Margin spacing.
+$margin-large: $spacing-large;
+$margin-medium: $spacing-medium;
+$margin-default: $spacing-default;
+$margin-small: $spacing-small;
+$margin-extra-small: $spacing-extra-small;
+
+// Spacing maps.
+$padding-spacing-map: (
+    'large': $padding-large,
+    'medium': $padding-medium,
+    'default': $padding-default,
+    'small': $padding-small,
+    'extra-small': $padding-extra-small
+);
+
+$margin-spacing-map: (
+    'large': $margin-large,
+    'medium': $margin-medium,
+    'default': $margin-default,
+    'small': $margin-small,
+    'extra-small': $margin-extra-small
+);
+
+$spacing-maps: (
+    'padding': $padding-spacing-map,
+    'margin': $margin-spacing-map
+);
+
+$box-component-aliases: (
+    'padding': 'p',
+    'margin': 'm'
+);
+
+$spacing-ordinals: (
+    'left': 'l',
+    'top': 't',
+    'right': 'r',
+    'bottom': 'b'
+);
+
+// Table spacing.
+$column-spacing-default: 15px;
+$row-spacing-default: 15px;

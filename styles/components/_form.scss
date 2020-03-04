@@ -1,0 +1,42 @@
+.form-section {
+    padding-bottom: $padding-default;
+
+    > .form-label {
+        display: inline-block;
+        font-size: $font-size;
+        margin-bottom: $margin-small;
+    }
+}
+
+.input-element {
+    display: block;
+    width: 100%;
+    border: $border-width-small solid $color-grey;
+    padding: 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: $margin-extra-small;
+
+    > input {
+        margin: 0;
+        padding: 0;
+        margin-right: $margin-small;
+    }
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: $margin-extra-small;
+
+    > input {
+        margin: 0;
+        padding: 0;
+        margin-right: $margin-small;
+    }
+}

@@ -1,0 +1,10 @@
+.rotate {
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+
+@keyframes rotate { 
+    100% { 
+        transform: rotate(360deg);
+    } 
+}

@@ -1,0 +1,31 @@
+.flush {
+  border-left: none;
+  border-right: none;
+}
+
+.m-none {
+    margin: none;
+}
+
+.p-none {
+    padding: none;
+}
+
+.mp-none {
+    margin: none;
+    padding: none;
+}
+
+@each $box-component, $dimension-map in $spacing-maps {
+    @each $dimension, $value in $dimension-map {
+        @each $ordinal, $alias in $spacing-ordinals {
+            .#{map-get($box-component-aliases, $box-component)}#{$alias}-#{$dimension} {
+                #{$box-component}-#{$ordinal}: #{$value};
+            }
+        }
+
+        .#{map-get($box-component-aliases, $box-component)}-#{$dimension} {
+            #{$box-component}: #{$value};
+        }
+    }
+}

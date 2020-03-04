@@ -1,0 +1,25 @@
+.label {
+    color: $color-light !important;
+    border-radius: 5px;
+    font-size: 0;
+    display: inline-block;
+    
+    > .label-title {
+        background-color: $color-dark;
+        color: $color-light;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 1rem;
+        padding: $padding-extra-small;
+        line-height: 32px;
+    }
+
+    > .label-details {
+        background-color: $color-light;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 1rem;
+        padding: $padding-extra-small;
+        line-height: 31px;
+    }
+}

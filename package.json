@@ -1,0 +1,50 @@
+{
+  "name": "thanatos-css",
+  "version": "0.1.0",
+  "author": "NSSure",
+  "description": "A simple frontend css plugin",
+  "license": "ISC",
+  "keywords": [
+    "css",
+    "sass",
+    "plugin",
+    "frontend",
+    "styles",
+    "styling",
+    "components",
+    "simple",
+    "basic"
+  ],
+  "scripts": {
+    "start": "concurrently \"webpack-serve ./webpack.config.js --open\" \"webpack --watch\" \"node index.js\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.0-beta.4",
+    "concurrently": "^3.6.1",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-entry-webpack-plugin": "^1.0.0-beta.4",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.1.10",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fstream": ">=1.0.12",
+    "js-yaml": ">=3.13.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.2",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "tar": ">=2.2.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-serve": "^2.0.3"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0"
+  }
+}

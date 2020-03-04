@@ -1,0 +1,51 @@
+// Black and white colors.
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+// Component related colors.
+$color-light: #F3F3F3;
+$color-dark: #333333;
+$color-success: #6db797;
+$color-danger: #DD5246;
+$color-warning: #FECC40;
+$color-divider: #E6E6E6;
+$color-link: #007ACC;
+
+// Basic colors.
+$color-red: #DC3545;
+$color-orange: #FF9800;
+$color-yellow: #FFEB3B;
+$color-green: #28A745;
+$color-blue: #2D578F;
+$color-purple: #9C27B0;
+$color-pink: #E91E63;
+$color-brown: #795548;
+$color-grey: #9E9E9E;
+
+// Default text color.
+$text-default: #718096;
+
+// Color maps.
+$other-color-map: (
+    "white": $color-white,
+    "black": $color-black,
+    "light": $color-light,
+    "dark": $color-dark,
+    "success": $color-success,
+    "danger": $color-danger,
+    "warning": $color-warning,
+    "divider": $color-divider,
+    "link": $color-link
+);
+
+$basic-color-map: (
+    "red": $color-red, 
+    "orange": $color-orange, 
+    "yellow": $color-yellow,
+    "green": $color-green,
+    "blue": $color-blue,
+    "purple": $color-purple,
+    "pink": $color-pink,
+    "brown": $color-brown,
+    "grey": $color-grey
+);

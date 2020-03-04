@@ -1,0 +1,22 @@
+.sidebar {
+    background-color: $color-light;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: stretch;
+
+    .sidebar-header {
+        background-color: $color-divider;
+        height: 200px;
+    }
+
+    .sidebar-content {
+        flex-grow: 1;
+    }
+
+    .sidebar-footer {
+        background-color: $color-divider;
+        padding: $padding-default;
+    }
+}

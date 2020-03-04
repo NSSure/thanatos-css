@@ -1,0 +1,180 @@
+.nav {
+    &.nav-menu {
+        list-style-type: none;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        .nav-toggle {
+            @media only screen and (max-width: 768px) {
+                display: block;
+            }
+
+            @media only screen and (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        > .nav-left {
+            display: flex;
+        }
+        
+        > .nav-right {
+            display: flex;
+            justify-content: flex-end;
+
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .nav-text {
+            font-weight: bold;
+            font-size: 1.25rem;
+            font-weight: normal;
+            padding: 15px;
+    
+            a {
+                color: $color-dark;
+                text-decoration: none;
+                height: 100%;
+            }
+        }
+        
+        .nav-item {
+            display: flex;
+            list-style-type: none;
+            
+            > li {
+                padding: $padding-default;
+    
+                a {
+                    color: $color-dark;
+                }
+
+                .nav-menu.fill-dark & {
+                    background-color: black;
+                }
+    
+                &:hover {
+                    background-color: darken($color: $color-light, $amount: 5);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.fill-dark, &.fill-success, &.fill-danger, &.fill-warning, &.fill-link {
+            .nav-text {
+                a {
+                    color: darken($color: $color-light, $amount: 5);
+                }
+            }
+
+            .nav-item {
+                > li {
+                    a {
+                        color: $color-light;
+                    }
+                }
+            }
+        }
+
+        &.fill-dark {
+            .nav-item {
+                > li {
+                    &:hover {
+                        background-color: darken($color: $color-dark, $amount: 5);
+                    }
+                }
+            }
+        }
+
+        &.fill-success {
+            .nav-item {
+                > li {
+                    &:hover {
+                        background-color: darken($color: $color-success, $amount: 5);
+                    }
+                }
+            }
+        }
+
+        &.fill-danger {
+            .nav-item {
+                > li {
+                    &:hover {
+                        background-color: darken($color: $color-danger, $amount: 5);
+                    }
+                }
+            }
+        }
+
+        &.fill-warning {
+            .nav-item {
+                > li {
+                    &:hover {
+                        background-color: darken($color: $color-warning, $amount: 5);
+                    }
+                }
+            }
+        }
+
+        &.fill-link {
+            .nav-item {
+                > li {
+                    &:hover {
+                        background-color: darken($color: $color-link, $amount: 5);
+                    }
+                }
+            }
+        }
+
+        li {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &.nav-list {
+        list-style-type: none;
+        padding: 0;
+
+        .nav-group {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: $margin-large;
+
+            li {
+                font-size: 14px;
+                padding: 5px 0;
+                font-weight: 700;
+
+                &.item-header {
+                    text-transform: uppercase;
+                    color: #a0aec0;
+                    font-weight: bold;
+                }
+        
+                &:last-child {
+                    border-bottom: none;
+                }
+        
+                a {
+                    text-decoration: none;
+                    color: $text-default;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &.nav-flush {
+        border-left: none;
+        border-right: none;
+    }
+}
