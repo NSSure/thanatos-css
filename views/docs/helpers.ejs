@@ -29,7 +29,7 @@
             <tr>
                 <th>Class</th>
                 <th>Variable</th>
-                <th>Value</th>
+                <th>Value(s)</th>
                 <th>Sass Type</th>
             </tr>
         </thead>
@@ -37,16 +37,23 @@
             <% for (var i = 0; i < sassVariables[property].length; i++) { %>
             <tr>
                 <td>
-                    <% if (sassVariables[property][i].sassType === 'list') { %>
-                        <code>.<%= sassVariables[property][i].name.substr(1) %>-[val]</code>
-                    <% } else { %>
-                    <code>.<%= sassVariables[property][i].name.substr(1) %></code>
-                    <% } %>
+                    <code><%= sassVariables[property][i].class %></code>
                 </td>
                 <td>
-                    <code><%= sassVariables[property][i].name %></code>
+                    <code><%= sassVariables[property][i].variable %></code>
                 </td>
-                <td><%= sassVariables[property][i].value %></td>
+                <td>
+                    <% if (sassVariables[property][i].sassType === 'list') { %>
+                        <% for (var ii = 0; ii < sassVariables[property][i].value.length; ii++) { %>
+                            <%= sassVariables[property][i].value[ii] %>
+                            <% if (ii !== sassVariables[property][i].value.length - 1) { %>
+                                <span>,</span>
+                            <% } %>
+                        <% } %>
+                    <% } else { %>
+                        <%= sassVariables[property][i].value %>
+                    <% } %>
+                </td>
                 <td><%= sassVariables[property][i].sassType %></td>
             </tr>
             <% } %>

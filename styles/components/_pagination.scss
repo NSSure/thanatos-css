@@ -7,8 +7,8 @@
 
     // Common pagination theme styles.
     li {
-        padding: $padding-extra-small $padding-small;
-        margin-right: $margin-extra-small;
+        padding: $pagination-padding-y $pagination-padding-x;
+        margin-right: $pagination-item-spacing;
         cursor: pointer;
         
         &.active {

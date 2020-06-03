@@ -1,0 +1,9 @@
+.button {
+    // Generate button spacing ratio helpers
+    @each $name, $ratio in $button-spacing-ratio-map {
+        &.is-#{$name} {
+            padding: $padding-small * $ratio;
+            font-size: $font-size * $ratio;
+        }
+    }
+}

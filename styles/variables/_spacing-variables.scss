@@ -56,3 +56,9 @@ $spacing-ordinals: (
 // Table spacing.
 $column-spacing-default: 15px;
 $row-spacing-default: 15px;
+
+// Pagination component spacing.
+$pagination-padding-y: $padding-default;
+$pagination-padding-x: $padding-default;
+
+$pagination-item-spacing: $margin-extra-small;

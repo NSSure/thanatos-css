@@ -19,8 +19,6 @@ label {
   font-size: .75rem;
 }
 
-
-
 @for $i from 1 through 5 {
   .title-#{$i} {
     font-size: 2 - (($i - 1) * $font-size-scale) + rem;

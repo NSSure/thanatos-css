@@ -20,12 +20,12 @@
     @each $dimension, $value in $dimension-map {
         @each $ordinal, $alias in $spacing-ordinals {
             .#{map-get($box-component-aliases, $box-component)}#{$alias}-#{$dimension} {
-                #{$box-component}-#{$ordinal}: #{$value};
+                #{$box-component}-#{$ordinal}: #{$value} !important;
             }
         }
 
         .#{map-get($box-component-aliases, $box-component)}-#{$dimension} {
-            #{$box-component}: #{$value};
+            #{$box-component}: #{$value} !important;
         }
     }
 }
