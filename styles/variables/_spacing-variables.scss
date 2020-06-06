@@ -25,33 +25,28 @@ $padding-spacing-map: (
     'medium': $padding-medium,
     'default': $padding-default,
     'small': $padding-small,
-    'extra-small': $padding-extra-small
-);
+    'extra-small': $padding-extra-small);
 
 $margin-spacing-map: (
     'large': $margin-large,
     'medium': $margin-medium,
     'default': $margin-default,
     'small': $margin-small,
-    'extra-small': $margin-extra-small
-);
+    'extra-small': $margin-extra-small);
 
 $spacing-maps: (
     'padding': $padding-spacing-map,
-    'margin': $margin-spacing-map
-);
+    'margin': $margin-spacing-map);
 
 $box-component-aliases: (
     'padding': 'p',
-    'margin': 'm'
-);
+    'margin': 'm');
 
 $spacing-ordinals: (
     'left': 'l',
     'top': 't',
     'right': 'r',
-    'bottom': 'b'
-);
+    'bottom': 'b');
 
 // Table spacing.
 $column-spacing-default: 15px;

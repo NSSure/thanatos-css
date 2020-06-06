@@ -1,0 +1,39 @@
+[
+    {
+        "classes": [],
+        "variable": "$animation-iteration-counts",
+        "value": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "infinite"
+        ],
+        "sassType": "list"
+    },
+    {
+        "classes": [],
+        "variable": "$animation-delay-intervals",
+        "value": [
+            "1s",
+            "2s",
+            "3s",
+            "4s",
+            "5s"
+        ],
+        "sassType": "list"
+    },
+    {
+        "classes": [],
+        "variable": "$animation-duration-intervals",
+        "value": [
+            "1s",
+            "2s",
+            "3s",
+            "4s",
+            "5s"
+        ],
+        "sassType": "list"
+    }
+]

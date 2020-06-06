@@ -1,3 +1,8 @@
+// @json-config ClassPrefix=iteration-
 $animation-iteration-counts: (1, 2, 3, 4, 5, infinite);
+
+// @json-config ClassPrefix=delay-
 $animation-delay-intervals: (1s, 2s, 3s, 4s, 5s);
+
+// @json-config ClassPrefix=duration-
 $animation-duration-intervals: (1s, 2s, 3s, 4s, 5s);

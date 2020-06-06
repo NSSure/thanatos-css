@@ -3,23 +3,39 @@ $color-white: #FFFFFF;
 $color-black: #000000;
 
 // Component related colors.
+// @json-config Group=ComponentColors
 $color-light: #F3F3F3;
+// @json-config Group=ComponentColors
 $color-dark: #333333;
+// @json-config Group=ComponentColors
 $color-success: #6db797;
+// @json-config Group=ComponentColors
 $color-danger: #DD5246;
+// @json-config Group=ComponentColors
 $color-warning: #FECC40;
+// @json-config Group=ComponentColors
 $color-divider: #E6E6E6;
+// @json-config Group=ComponentColors
 $color-link: #007ACC;
 
 // Basic colors.
+// @json-config Group=BasicColors
 $color-red: #DC3545;
+// @json-config Group=BasicColors
 $color-orange: #FF9800;
+// @json-config Group=BasicColors
 $color-yellow: #FFEB3B;
+// @json-config Group=BasicColors
 $color-green: #28A745;
+// @json-config Group=BasicColors
 $color-blue: #2D578F;
+// @json-config Group=BasicColors
 $color-purple: #9C27B0;
+// @json-config Group=BasicColors
 $color-pink: #E91E63;
+// @json-config Group=BasicColors
 $color-brown: #795548;
+// @json-config Group=BasicColors
 $color-grey: #9E9E9E;
 
 // Default text color.
@@ -27,28 +43,26 @@ $text-default: #718096;
 
 // Color maps.
 $other-color-map: (
-    "white": $color-white,
-    "black": $color-black,
-    "light": $color-light,
-    "dark": $color-dark,
-    "success": $color-success,
-    "danger": $color-danger,
-    "warning": $color-warning,
-    "divider": $color-divider,
-    "link": $color-link
-);
+    white: $color-white,
+    black: $color-black,
+    light: $color-light,
+    dark: $color-dark,
+    success: $color-success,
+    danger: $color-danger,
+    warning: $color-warning,
+    divider: $color-divider,
+    link: $color-link);
 
 $basic-color-map: (
-    "red": $color-red, 
-    "orange": $color-orange, 
-    "yellow": $color-yellow,
-    "green": $color-green,
-    "blue": $color-blue,
-    "purple": $color-purple,
-    "pink": $color-pink,
-    "brown": $color-brown,
-    "grey": $color-grey
-);
+    red: $color-red, 
+    orange: $color-orange, 
+    yellow: $color-yellow,
+    green: $color-green,
+    blue: $color-blue,
+    purple: $color-purple,
+    pink: $color-pink,
+    brown: $color-brown,
+    grey: $color-grey);
 
 // Component colors.
-$code-bg-: $color-light;
+$code-bg: $color-light;

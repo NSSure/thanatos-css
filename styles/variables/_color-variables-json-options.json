@@ -1,0 +1,56 @@
+{
+    "VariantFormats": [
+        {
+            "Format": ".fill-{0}",
+            "ApplyTo": [
+                "ComponentColors",
+                "BasicColors"
+            ]
+        },
+        {
+            "Format": ".fill-{0}-darken-{range:1-5}",
+            "ApplyTo": [
+                "ComponentColors",
+                "BasicColors"
+            ]
+        },
+        {
+            "Format": ".fill-{0}-lighten-{range:1-5}",
+            "ApplyTo": [
+                "ComponentColors",
+                "BasicColors"
+            ]
+        },
+        {
+            "Format": ".text-{0}",
+            "ApplyTo": [
+                "ComponentColors",
+                "BasicColors"
+            ]
+        },
+        {
+            "Format": ".text-{0}-darken-{range:1-5}",
+            "ApplyTo": [
+                "ComponentColors",
+                "BasicColors"
+            ]
+        },
+        {
+            "Format": ".text-{0}-darken-{range:1-5}",
+            "ApplyTo": [
+                "ComponentColors",
+                "BasicColors"
+            ]
+        }
+    ],
+    "Groups": [
+        {
+            "Key": "ComponentColors",
+            "Descriptionn": "Each basic color has a variant helper class that darkens of lighten the base color by a factor of 5."
+        },
+        {
+            "Key": "BasicColors",
+            "Description": "Each basic color has a variant helper class that darkens of lighten the base color by a factor of 5."
+        }
+    ]
+}

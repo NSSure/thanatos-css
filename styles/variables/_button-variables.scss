@@ -2,6 +2,8 @@ $button-spacing-ratio-large: 1.5;
 $button-spacing-ratio-medium: 1.25;
 $button-spacing-ratio-default: 1;
 $button-spacing-ratio-small: .75;
+
+// @json-config ClassPrefix=
 $button-spacing-ratio-extra-small: .5;
 
 // Color maps.
@@ -10,5 +12,4 @@ $button-spacing-ratio-map: (
     "medium": $button-spacing-ratio-medium,
     "default": $button-spacing-ratio-default,
     "small": $button-spacing-ratio-small,
-    "extra-small": $button-spacing-ratio-extra-small
-);
+    "extra-small": $button-spacing-ratio-extra-small);

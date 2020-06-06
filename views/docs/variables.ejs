@@ -1,5 +1,5 @@
 <div class="mb-large">
-    <h1 class="title-1">Helpers</h1>
+    <h1 class="title-1">Variables</h1>
 
     <p>
         Defined below are all of the SaaS variables the plugin used to define and style its
@@ -27,18 +27,15 @@
     <table class="table is-fixed-width is-rounded is-shadowed">
         <thead class="fill-light">
             <tr>
-                <th>Class</th>
                 <th>Variable</th>
                 <th>Value(s)</th>
                 <th>Sass Type</th>
+                <th>Available Helper Classes</th>
             </tr>
         </thead>
         <tbody>
             <% for (var i = 0; i < sassVariables[property].length; i++) { %>
             <tr>
-                <td>
-                    <code><%= sassVariables[property][i].class %></code>
-                </td>
                 <td>
                     <code><%= sassVariables[property][i].variable %></code>
                 </td>
@@ -55,6 +52,9 @@
                     <% } %>
                 </td>
                 <td><%= sassVariables[property][i].sassType %></td>
+                <td>
+                    <code><%= sassVariables[property][i].class ? sassVariables[property][i].class : 'No helper available' %></code>
+                </td>
             </tr>
             <% } %>
         </tbody>

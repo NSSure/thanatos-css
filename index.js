@@ -21,14 +21,15 @@ fs.readdir('./views/docs', (err, files) => {
     console.log(fileName);
 
     app.get(`/${fileName}`, async (req, res) => {
-        if (fileName === 'helpers') {
+        if (fileName === 'variables') {
           var sassVariables = {
-            animation: JSON.parse(fs.readFileSync("./data/animation-helpers.json")),
-            color: JSON.parse(fs.readFileSync("./data/color-helpers.json")),
-            layout: JSON.parse(fs.readFileSync("./data/layout-helpers.json")),
-            spacing: JSON.parse(fs.readFileSync("./data/spacing-helpers.json")),
-            sizing: JSON.parse(fs.readFileSync("./data/sizing-helpers.json")),
-            typography: JSON.parse(fs.readFileSync("./data/typography-helpers.json"))
+            animation: JSON.parse(fs.readFileSync("./data/_animation-variables.json")),
+            button: JSON.parse(fs.readFileSync("./data/_button-variables.json")),
+            color: JSON.parse(fs.readFileSync("./data/_color-variables.json")),
+            layout: JSON.parse(fs.readFileSync("./data/_layout-variables.json")),
+            spacing: JSON.parse(fs.readFileSync("./data/_spacing-variables.json")),
+            state: JSON.parse(fs.readFileSync("./data/_state-variables.json")),
+            typography: JSON.parse(fs.readFileSync("./data/_typography-variables.json"))
           };
 
           res.render(`docs/${fileName}`, { sassVariables: sassVariables });
@@ -36,6 +37,17 @@ fs.readdir('./views/docs', (err, files) => {
         else {
           res.render(`docs/${fileName}`);
         }
+    });
+  });
+});
+
+fs.readdir('./views/getting-started', (err, files) => {
+  files.forEach(file => {
+    const fileName = path.basename(file, path.extname(file));
+    console.log(fileName);
+
+    app.get(`/${fileName}`, async (req, res) => {
+      res.render(`getting-started/${fileName}`);
     });
   });
 });
